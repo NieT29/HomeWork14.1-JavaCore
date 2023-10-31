@@ -55,7 +55,7 @@ public class PetService {
         Pet randomPet;
         do {
             randomPet = petList.get(random.nextInt(petList.size()));
-        } while (randomPet.getTYPE() != userPet.getTYPE() || randomPet.getSex().equalsIgnoreCase(userPet.getSex()));
+        } while (randomPet.getTYPE() != userPet.getTYPE() && randomPet.getSex().equalsIgnoreCase(userPet.getSex()));
         return randomPet;
     }
 
